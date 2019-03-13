@@ -1,0 +1,73 @@
+/*
+ Theme Name: Varguilla y Asociados
+ Author: Pedro Fernandez
+ Version: 1.0
+*/
+
+.parallax {
+    /* The image used */
+    background-image: url("");
+  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ 
+ .center{margin:auto;}
+
+ /*Carrusel*/
+ .carousel-item {
+    height: 93vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+ /*Fin carrusel*/
+
+ .row-equal > div[class*='col-'] {
+    display: flex;
+    flex: 1 0 auto;
+}
+
+.row-equal .card {
+   width: 100%;
+}
+
+/* ensure equal card height inside carousel */
+.carousel-inner>.row-equal.active, 
+.carousel-inner>.row-equal.next, 
+.carousel-inner>.row-equal.prev {
+    display: flex;
+}
+
+/* prevent flicker during transition */
+.carousel-inner>.row-equal.active.left, 
+.carousel-inner>.row-equal.active.right {
+    opacity: 0.5;
+    display: flex;
+}
+
+
+/* control image height */
+.card-img-top-250 {
+    max-height: 250px;
+    overflow:hidden;
+}
+
+@media (min-width: 992px){
+	.nav-margen-derecho{
+		margin-right: 7vh;
+	}
+
+	.navbar-nav li:hover>.dropdown-menu {
+  		display: block;
+	}
+}
