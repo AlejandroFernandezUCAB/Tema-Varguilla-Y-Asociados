@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html <?php languagues_attributes();?>>
+<html <?php language_attributes()?>>
 <head>
     <meta charset="<?php bloginfo('chartset')?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +10,7 @@
         		<!--Barra de navegacion-->
 		<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
 			<a class="navbar-brand" href="#">
-				<img src="img/logo.png" class="d-inline-block align-top" width="35" height="35" alt="Imange de Varguilla">
+				<img src="<?php echo get_theme_file_uri('/images/logo.png')?>" class="d-inline-block align-top" width="35" height="35" alt="Imange de Varguilla">
 				Varguilla y Asociados
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
