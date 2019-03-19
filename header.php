@@ -7,9 +7,9 @@
 </head>
 <body <?php body_class();?> >
     <header>
-        		<!--Barra de navegacion-->
+        <!--Barra de navegacion-->
 		<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
-			<a class="navbar-brand" href="#">
+			<a class="navbar-brand" href="<?php echo site_url( )?>">
 				<img src="<?php echo get_theme_file_uri('/images/logo.png')?>" class="d-inline-block align-top" width="35" height="35" alt="Imange de Varguilla">
 				Varguilla y Asociados
 			</a>
@@ -17,39 +17,19 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNavDropdown">
-				<ul class="navbar-nav nav-margen-derecho ml-auto ">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Quiénes Somos
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="#">Nuestros miembros</a>
-							<a class="dropdown-item" href="#">Nuestra historia</a>
-							<a class="dropdown-item" href="#">Especializaciones</a>
-						</div>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Artículos
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-								<a class="dropdown-item" href="#">Opinión</a>
-							<a class="dropdown-item" href="#">Sentencias</a>
-							<a class="dropdown-item" href="#">Laborales</a>
-							<a class="dropdown-item" href="#">Novedades legales</a>
-							<a class="dropdown-item" href="#">Recomendaciones legales</a>
-							<a class="dropdown-item" href="#">Empresariales</a>
-							<a class="dropdown-item" href="#">Derecho comparado</a>
-							<a class="dropdown-item" href="#">Opinión</a>
-						</div>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Contáctanos</a>
-					</li>
-				</ul>
+			<?php
+             wp_nav_menu( array(
+	             'menu'              => 'primary',
+	             'theme_location'    => 'headerMenuLocation',
+	             'depth'             => 2,
+	             'container'         => 'div',
+	             'container_class'   => 'nav-margen-derecho ml-auto',
+	             'container_id'      => '',
+	             'menu_class'        => 'navbar-nav ',
+	             'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+	             'walker'            => new wp_bootstrap_navwalker())
+	             );
+        	?>
 			</div>
 		</nav>
 		<!--Fin de barra de navegacion-->

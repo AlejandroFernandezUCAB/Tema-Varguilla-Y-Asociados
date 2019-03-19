@@ -1,4 +1,7 @@
-<?php get_header();?>
+<?php 
+	get_header();
+	$inicio = 'index.php/';
+?>
 
 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
 	<ol class="carousel-indicators">
@@ -34,13 +37,13 @@
 		<span class="carousel-control-next-icon" aria-hidden="true"></span>
 		<span class="sr-only">Siguiente</span>
 	</a>
-</div>			
-			
+</div>
+
 <!-- Page Content -->
 <section class="py-5">
 	<div class="container">
-		<h3 class="text-center">Noticias relevantes</h3>		
-		
+		<h3 class="text-center">Noticias relevantes</h3>
+
 		<div class="card-group text-center py-4">
 			<div class="card">
 				<svg class="card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em"></text></svg>
@@ -67,7 +70,7 @@
 			<div class="card">
 				<svg class="card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em"></text></svg>
 				<div class="card-body">
-					<h5 class="card-title">Card title</h5>	
+					<h5 class="card-title">Card title</h5>
 					<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
 					<a href="#" class="btn btn-primary">Ver más</a>
 				</div>
@@ -79,9 +82,9 @@
 </div>
 
 	<div class="container">
-		<h3 class="text-center">Últimas Noticias</h3>				
+		<h3 class="text-center">Últimas Noticias</h3>
 		<div class="card-group text-center py-4">
-			<div class="card">	
+			<div class="card">
 				<svg class="card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em"></text></svg>
 				<div class="card-body">
 					<h5 class="card-title">Card title</h5>
@@ -117,5 +120,48 @@
 		</div>
 	</div>
 </section>
+<hr/>
 
+<section class="py-5">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center pb-5">
+				<h3>Varguilla y Asociados</h3>
+			</div>
+			<div class="col-lg-4 col-sm-12 py-md-4">
+				<div class="card text-center">
+					<svg class="card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em"></text></svg>
+					<div class="card-header">
+						Quiénes somos
+					</div>
+					<div class="card-body">
+						<a href="<?php echo site_url($inicio.'quienes-somos')?>" class="btn btn-primary">Ver más</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-12 py-md-4">
+				<div class="card text-center">
+					<svg class="card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em"></text></svg>
+					<div class="card-header">
+						Nuestra historia
+					</div>
+					<div class="card-body">
+						<a href="#" class="btn btn-primary">Ver más</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-12 py-md-4">
+				<div class="card text-center">
+					<svg class="card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em"></text></svg>
+					<div class="card-header">
+						Especializaciones
+					</div>
+					<div class="card-body">
+						<a href="#" class="btn btn-primary">Ver más</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 <?php get_footer();?>

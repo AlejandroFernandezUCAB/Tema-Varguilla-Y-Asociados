@@ -14,7 +14,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="container py-3">
         <div class="row">
             <div class="col-lg-12 col-sm-12">
@@ -26,26 +26,34 @@
                 </div>
             <?php
                 $theParent = wp_get_post_parent_id(get_the_ID());
-
-                if ( $theParent != false) {
-            ?>
-
-            <?php
-                }
             ?>
             </div>
-            <div class="col-lg-9 col-sm-12">
-                <?php the_content( ) ?>
+            <div class="col-lg-9 col-sm-12 text-justify">
+                <?php the_content( );?>
             </div>
             <div class="col-lg-3 col-sm-12">
+                <h4><?php get_the_title( $theParent ) ?></h4>
                 <ul class="list-group">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Morbi leo risus</li>
-                    <li class="list-group-item">Porta ac consectetur ac</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
+                <?php
+                    $theParent = wp_get_post_parent_id( get_the_ID());
+                    $arrayPage = get_pages( array(
+                        'child_of' => get_the_ID() 
+                    ));
+
+                    if( $theParent OR $arrayPage){
+                        if ($theParent) {
+                            $findeChildrenOf = $theParent;
+                        }else{
+                            $findeChildrenOf = get_the_ID();
+                        }
+
+                        foreach ($arrayPage as $page) {
+                             echo '<li class="list-group-item"><div><a href="'.get_page_link( $page->ID ).'">'.$page->post_title.'</a></div></li>';
+                        }
+                ?>
                 </ul>
-            </div> 
+                <?php } ?>
+            </div>
         </div>
     </div>
 <?php
