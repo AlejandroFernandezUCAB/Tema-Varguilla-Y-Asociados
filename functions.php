@@ -7,6 +7,7 @@ function varguilla_files(){
     wp_enqueue_script('Popper.js','https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js',NULL, microtime(), true);
     wp_enqueue_script('Bootstrap.js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js',NULL, microtime(), true);
     wp_enqueue_style('Bootstrap', get_template_directory_uri().'/css/bootstrap.min.css');
+    wp_enqueue_style('Bootstrap personal', get_template_directory_uri().'/css/personal.css');
     wp_enqueue_style('varguillas_personal_style', get_stylesheet_uri());
 }
 
@@ -18,6 +19,8 @@ function varguilla_features(){
 	register_nav_menu('footerLocation1','Footer Location One');
 	register_nav_menu('footerLocation2','Footer Location Two');
 	add_theme_support('title-tag');
+    add_theme_support( 'post-thumbnails' ); 
+
 }
 
 add_action('after_setup_theme', 'varguilla_features');

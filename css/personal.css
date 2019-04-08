@@ -64,4 +64,23 @@
 	.navbar-nav li:hover>.dropdown-menu {
   		display: block;
 	}
+
+    .imagen-fondo{
+        width: 28vh;
+        height: 28vh;
+    }
 }
+
+.vcenter {
+    display:inline-block !important;
+    vertical-align:middle !important;   
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    .imagen-fondo{
+        width: 28vh;
+        height: 28vh;
+    }
+ }
+

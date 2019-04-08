@@ -48,22 +48,27 @@
 			</div>
 
 			<div class="col-lg-4 col-sm-12">
-				<div class="accordion" id="quienes-somos">
+				<h3 class="text-center">Quiénes somos</h3>
+				<div class="text-center">
+					<p class="text-justify">
+						Es una alianza creada para impulsar y afianzar la conexión con los clientes, porque consideramos que toda relación cliente-abogado es personal y de confianza, surgidas de la experiencia personal o recomendaciones, acorde a la eficiencia y eficacia en los servicios jurídicos prestados. Así se pensó en crear un espacio físico y web que permita mantener, proyectar, crear y mejora estas relaciones, mediante una comunicación permanente como fuente principal para el conocimiento de las necesidades del cliente.
+					</p>
+					<a class="btn btn-primary text-center" href="<?php echo site_url('quienes-somos')?>" role="button">Leer más &raquo</a>
+				</div>
+
+				<div class="accordion pt-3" id="accordionExample">
 				  <div class="card">
 				    <div class="card-header" id="headingOne">
 				      <h2 class="mb-0">
 				        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-				          Quiénes somos
+				          Miembros
 				        </button>
 				      </h2>
 				    </div>
 
-				    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#quienes-somos">
-				    	<div class="card-body text-justify">
-				        	Es una alianza creada para impulsar y afianzar la conexión con los clientes, porque consideramos que toda relación cliente-abogado es personal y de confianza, surgidas de la experiencia personal o recomendaciones, acorde a la eficiencia y eficacia en los servicios jurídicos prestados. Así se pensó en crear un espacio físico y web que permita mantener, proyectar, crear y mejora estas relaciones, mediante una comunicación permanente como fuente principal para el conocimiento de las necesidades del cliente.
-				    	</div>
-				    	<div class="text-center mb-3">
-				   			<a href="<?php echo site_url('/quienes-somos')?>" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Ver más &raquo</a>
+				    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+				      <div class="card-body">
+				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
 				      </div>
 				    </div>
 				  </div>
@@ -71,25 +76,11 @@
 				    <div class="card-header" id="headingTwo">
 				      <h2 class="mb-0">
 				        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-				          Miembros
-				        </button>
-				      </h2>
-				    </div>
-				    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#quienes-somos">
-				      <div class="card-body">
-				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-				      </div>
-				    </div>
-				  </div>
-				  <div class="card">
-				    <div class="card-header" id="headingThree">
-				      <h2 class="mb-0">
-				        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 				          Misión
 				        </button>
 				      </h2>
 				    </div>
-				    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#quienes-somos">
+				    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
 				      <div class="card-body">
 				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
 				      </div>
@@ -103,7 +94,63 @@
 				        </button>
 				      </h2>
 				    </div>
-				    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#quienes-somos">
+				    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+				      <div class="card-body">
+				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-sm-12">
+				<h3 class="text-center">Valores</h3>
+				<div class="text-center">
+					<p class="text-justify">
+						Es una alianza creada para impulsar y afianzar la conexión con los clientes, porque consideramos que toda relación cliente-abogado es personal y de confianza, surgidas de la experiencia personal o recomendaciones, acorde a la eficiencia y eficacia en los servicios jurídicos prestados. Así se pensó en crear un espacio físico y web que permita mantener, proyectar, crear y mejora estas relaciones, mediante una comunicación permanente como fuente principal para el conocimiento de las necesidades del cliente.
+					</p>
+					<a class="btn btn-primary text-center" href="<?php echo site_url('quienes-somos')?>" role="button">Leer más &raquo</a>
+				</div>
+
+				<div class="accordion pt-3" id="accordionExample">
+				  <div class="card">
+				    <div class="card-header" id="headingOne">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				          Miembros
+				        </button>
+				      </h2>
+				    </div>
+
+				    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+				      <div class="card-body">
+				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" id="headingTwo">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				          Misión
+				        </button>
+				      </h2>
+				    </div>
+				    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				      <div class="card-body">
+				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" id="headingThree">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				          Visión
+				        </button>
+				      </h2>
+				    </div>
+				    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
 				      <div class="card-body">
 				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
 				      </div>
@@ -113,48 +160,39 @@
 			</div>
 
 			<div class="col-lg-4 col-sm-12">
-				<div class="accordion" id="valores">
+				<h3 class="text-center">Especializaciones</h3>
+				<div class="text-center">
+					<p class="text-justify">
+						Es una alianza creada para impulsar y afianzar la conexión con los clientes, porque consideramos que toda relación cliente-abogado es personal y de confianza, surgidas de la experiencia personal o recomendaciones, acorde a la eficiencia y eficacia en los servicios jurídicos prestados. Así se pensó en crear un espacio físico y web que permita mantener, proyectar, crear y mejora estas relaciones, mediante una comunicación permanente como fuente principal para el conocimiento de las necesidades del cliente.
+					</p>
+					<a class="btn btn-primary text-center" href="<?php echo site_url('quienes-somos')?>" role="button">Leer más &raquo</a>
+				</div>
+
+				<div class="accordion pt-3" id="accordionExample">
 				  <div class="card">
 				    <div class="card-header" id="headingOne">
 				      <h2 class="mb-0">
-				        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
-				          Quiénes somos
+				        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				          Miembros
 				        </button>
 				      </h2>
 				    </div>
 
-				    <div id="collapseOne2" class="collapse show" aria-labelledby="headingOne" data-parent="#valores">
-				    	<div class="card-body text-justify">
-				        	Es una alianza creada para impulsar y afianzar la conexión con los clientes, porque consideramos que toda relación cliente-abogado es personal y de confianza, surgidas de la experiencia personal o recomendaciones, acorde a la eficiencia y eficacia en los servicios jurídicos prestados. Así se pensó en crear un espacio físico y web que permita mantener, proyectar, crear y mejora estas relaciones, mediante una comunicación permanente como fuente principal para el conocimiento de las necesidades del cliente.
-				    	</div>
-				    	<div class="text-center mb-3">
-				   			<a href="<?php echo site_url('/quienes-somos')?>" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Ver más &raquo</a>
+				    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+				      <div class="card-body">
+				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
 				      </div>
 				    </div>
 				  </div>
 				  <div class="card">
 				    <div class="card-header" id="headingTwo">
 				      <h2 class="mb-0">
-				        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
-				          Miembros
-				        </button>
-				      </h2>
-				    </div>
-				    <div id="collapseTwo2" class="collapse" aria-labelledby="headingTwo" data-parent="#valores">
-				      <div class="card-body">
-				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-				      </div>
-				    </div>
-				  </div>
-				  <div class="card">
-				    <div class="card-header" id="headingThree">
-				      <h2 class="mb-0">
-				        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
+				        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
 				          Misión
 				        </button>
 				      </h2>
 				    </div>
-				    <div id="collapseThree3" class="collapse" aria-labelledby="headingThree" data-parent="#valores">
+				    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
 				      <div class="card-body">
 				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
 				      </div>
@@ -163,12 +201,12 @@
 				  <div class="card">
 				    <div class="card-header" id="headingThree">
 				      <h2 class="mb-0">
-				        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour4" aria-expanded="false" aria-controls="collapseFour4">
+				        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 				          Visión
 				        </button>
 				      </h2>
 				    </div>
-				    <div id="collapseFour4" class="collapse" aria-labelledby="headingThree" data-parent="#valores">
+				    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
 				      <div class="card-body">
 				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
 				      </div>
@@ -176,10 +214,207 @@
 				  </div>
 				</div>
 			</div>
+
+	
+		
 		</div>
 	</div>
 </section>
-<hr/>
+
+<section class="py-3">
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-lg-6 col-sm-12 imagen-fondo align-self-center" style="background:transparent url(<?php echo get_theme_file_uri('images/buzon.jpeg')?>) no-repeat center center /cover" >
+
+
+      				<a class="btn btn-primary" href="<?php echo site_url('contacto')?>" role="button">Contacto</a>
+
+    		</div>
+
+			<div class="col-lg-6 col-sm-12 imagen-fondo" style="background:transparent url(<?php echo get_theme_file_uri('images/fondo-mac.jpg')?>) no-repeat center center /cover" >
+
+				<div class="col-lg-12 text-center imagen-fondo">
+      				<a class="btn btn-primary" href="<?php echo site_url('contacto')?>" role="button">Regístrate</a>
+    			</div>
+
+    		</div>
+
+		</div>
+	</div>
+</section>
+
+<section class="py-3">
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-lg-4 col-sm-12" >
+				<div class="row">
+					<div class="col-lg-12 col-sm-12" >
+						<h3 class="text-center">Servicios prestados</h3>
+						<ul>
+							<li>Asesoría Jurídica</li>
+							<li>Elaboración de Dictamen y opiniones jurídicas</li>
+							<li>Elaboración de documentos</li>
+							<li>Representación o Asistencia en órganos judiciales o Administrativos</li>
+							<li>Asesoría en negociaciones colectivas de trabajo</li>
+							<li>Gestiones y trámites administrativos</li>
+							<li>Auditoria Laboral</li>
+							<li>Auditoría General</li>
+						</ul>
+					</div>
+
+					<div class="col-lg-12 col-sm-12">
+    					<h3 class="text-center">Novedades legales</h3>
+    					<ul>
+					<?php $args = array(
+							'posts_per_page'   => 10,
+							'cat'         => '9',
+							'orderby'          => 'date',
+							'order'            => 'DESC',
+							'post_type'        => 'post',
+							'post_status'      => 'publish',
+						);
+						$posts_array = get_posts( $args ); 
+						foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
+							<li><a class="card-link" href="<?php the_permalink(); ?>"><?php the_title();?></a></li>
+						<?php endforeach; 
+						wp_reset_postdata();
+					?>
+						</ul>   		
+    				</div>
+
+    				<div class="col-lg-12 col-sm-12">
+    					<h3 class="text-center">Preguntas frecuentes</h3>
+  						<div class="accordion pt-3" id="accordionExample">
+						  <div class="card">
+						    <div class="card-header" id="headingOne">
+						      <h2 class="mb-0">
+						        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						          Miembros
+						        </button>
+						      </h2>
+						    </div>
+
+						    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+						      <div class="card-body">
+						        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+						      </div>
+						    </div>
+						  </div>
+						  <div class="card">
+						    <div class="card-header" id="headingTwo">
+						      <h2 class="mb-0">
+						        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						          Misión
+						        </button>
+						      </h2>
+						    </div>
+						    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+						      <div class="card-body">
+						        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+						      </div>
+						    </div>
+						  </div>
+						  <div class="card">
+						    <div class="card-header" id="headingThree">
+						      <h2 class="mb-0">
+						        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						          Visión
+						        </button>
+						      </h2>
+						    </div>
+						    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+						      <div class="card-body">
+						        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+						      </div>
+						    </div>
+						  </div>
+						</div>
+    				</div>
+
+				</div>
+    		</div>
+
+    		<div class="col-lg-4 col-sm-12">
+
+
+    			<h3 class="text-center">Artículos laborales</h3>
+
+					<?php $args = array(
+							'posts_per_page'   => 2,
+							'cat'         => '2',
+							'orderby'          => 'date',
+							'order'            => 'DESC',
+							'post_type'        => 'post',
+							'post_status'      => 'publish',
+						);
+						$posts_array = get_posts( $args ); 
+						foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
+							<div class="card my-1">
+								<div class="card-body">
+									<h5 class="card-title"><?php the_title();?></h5>
+							    	<p class="card-text text-justify"><?php echo get_the_excerpt()?></p>
+							    	<div class="text-right">
+										<a class="card-link" href="<?php the_permalink(); ?>">Leer más &raquo</a>
+									</div>
+								</div>
+							</div>			
+						<?php endforeach; 
+						wp_reset_postdata();
+					?>
+
+					
+    		</div>
+
+    		<div class="col-lg-4 col-sm-12">
+    			<h3 class="text-center">Artículos de opinión</h3>
+    				<?php $args = array(
+						'posts_per_page'   => 2,
+						'cat'         => '8',
+						'orderby'          => 'date',
+						'order'            => 'DESC',
+						'post_type'        => 'post',
+						'post_status'      => 'publish',
+					);
+					$posts_array = get_posts( $args ); 
+					foreach ( $posts_array as $post ) : setup_postdata( $post ); 
+
+						//Pregunta si hay imagen miniatura para ver si colocarla o no
+						if (has_post_thumbnail($post->ID)) {
+							$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+						}
+						 
+					?>
+						<div class="card my-1">
+							<?php
+
+								//Pregunta si hay imagen miniatura para ver si colocarla o no
+								//Se recomiendan imagenes con 960x720
+								if (has_post_thumbnail($post->ID)) {
+							?>
+								<img class="card-img-top" src="<?php echo $image[0]?>" alt="Card image cap">
+							<?php
+								}
+
+							?>
+						  
+						  <div class="card-body">
+						    <h5 class="card-title"><?php the_title();?></h5>
+						    <p class="card-text text-justify"><?php echo get_the_excerpt()?></p>
+						    <div class="text-right">
+								<a class="card-link" href="<?php the_permalink(); ?>">Leer más &raquo</a>
+							</div>
+						    <p class="card-text"><small class="text-muted"><?php the_time('N - j - Y')?></small></p>
+						  </div>
+						</div>		
+					<?php endforeach; 
+						wp_reset_postdata();
+					?>
+    		</div>
+		</div>
+	</div>
+</section>
 
 
 <?php get_footer();?>
