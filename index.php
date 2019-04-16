@@ -213,10 +213,7 @@
 				    </div>
 				  </div>
 				</div>
-			</div>
-
-	
-		
+			</div>		
 		</div>
 	</div>
 </section>
@@ -247,15 +244,14 @@
 <section class="py-3">
 	<div class="container">
 		<div class="row">
-			
 			<div class="col-lg-4 col-sm-12" >
 				<div class="row">
 					<div class="col-lg-12 col-sm-12" >
-						<h3 class="text-center">Servicios prestados</h3>
-						<ul>
+						<h3 class="text-center pb-3">Servicios prestados</h3>
+						<ul class="text-justify">
 							<li>Asesoría Jurídica</li>
 							<li>Elaboración de Dictamen y opiniones jurídicas</li>
-							<li>Elaboración de documentos</li>
+							<li>Elaboración o revisión de Contratos</li>
 							<li>Representación o Asistencia en órganos judiciales o Administrativos</li>
 							<li>Asesoría en negociaciones colectivas de trabajo</li>
 							<li>Gestiones y trámites administrativos</li>
@@ -264,8 +260,8 @@
 						</ul>
 					</div>
 
-					<div class="col-lg-12 col-sm-12">
-    					<h3 class="text-center">Novedades legales</h3>
+					<div class="col-lg-12 col-sm-12 my-3">
+    					<h3 class="text-center pb-3">Novedades legales</h3>
     					<ul>
 					<?php $args = array(
 							'posts_per_page'   => 10,
@@ -284,8 +280,8 @@
 						</ul>   		
     				</div>
 
-    				<div class="col-lg-12 col-sm-12">
-    					<h3 class="text-center">Preguntas frecuentes</h3>
+    				<div class="col-lg-12 col-sm-12 my-3">
+    					<h3 class="text-center pb-3">Preguntas frecuentes</h3>
   						<div class="accordion pt-3" id="accordionExample">
 						  <div class="card">
 						    <div class="card-header" id="headingOne">
@@ -337,83 +333,167 @@
     		</div>
 
     		<div class="col-lg-4 col-sm-12">
+    		    	<div class="row">
+    					<div class="col-lg-12 col-sm-12">
+    						<h3 class="text-center pb-3">Artículos laborales</h3>
 
-
-    			<h3 class="text-center">Artículos laborales</h3>
-
-					<?php $args = array(
-							'posts_per_page'   => 2,
-							'cat'         => '2',
-							'orderby'          => 'date',
-							'order'            => 'DESC',
-							'post_type'        => 'post',
-							'post_status'      => 'publish',
-						);
-						$posts_array = get_posts( $args ); 
-						foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
-							<div class="card my-1">
-								<div class="card-body">
-									<h5 class="card-title"><?php the_title();?></h5>
-							    	<p class="card-text text-justify"><?php echo get_the_excerpt()?></p>
-							    	<div class="text-right">
-										<a class="card-link" href="<?php the_permalink(); ?>">Leer más &raquo</a>
+							<?php $args = array(
+								'posts_per_page'   => 2,
+								'cat'         => '2',
+								'orderby'          => 'date',
+								'order'            => 'DESC',
+								'post_type'        => 'post',
+								'post_status'      => 'publish',
+							);
+							$posts_array = get_posts( $args ); 
+							foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
+								<div class="card my-1">
+									<div class="card-body">
+										<h5 class="card-title"><?php the_title();?></h5>
+							    		<p class="card-text text-justify"><?php echo get_the_excerpt()?></p>
+							    		<div class="text-right">
+											<a class="card-link" href="<?php the_permalink(); ?>">Leer más &raquo</a>
+										</div>
 									</div>
-								</div>
-							</div>			
-						<?php endforeach; 
-						wp_reset_postdata();
-					?>
+								</div>			
+							<?php endforeach; 
+								wp_reset_postdata();
+							?>
+							<div class="text-center">
+								<a class="btn btn-primary text- my-3" href="<?php echo get_category_link(2);?>" role="button">Ver más artículos laborales &raquo</a>
+							</div>
 
-					
+    					</div>
+
+    					<div class="col-lg-12 col-sm-12">
+    						<h3 class="text-center pb-3">Sentencias relevantes</h3>
+
+							<?php $args = array(
+								'posts_per_page'   => 2,
+								'cat'         => '5',
+								'orderby'          => 'date',
+								'order'            => 'DESC',
+								'post_type'        => 'post',
+								'post_status'      => 'publish',
+							);
+							$posts_array = get_posts( $args ); 
+							foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
+								<div class="card my-1">
+									<div class="card-body">
+										<h5 class="card-title"><?php the_title();?></h5>
+							    		<p class="card-text text-justify"><?php echo get_the_excerpt()?></p>
+							    		<div class="text-right">
+											<a class="card-link" href="<?php the_permalink(); ?>">Leer más &raquo</a>
+										</div>
+									</div>
+								</div>			
+							<?php endforeach; 
+								wp_reset_postdata();
+							?>
+							<div class="text-center">
+								<a class="btn btn-primary text- my-3" href="<?php echo get_category_link(5);?>" role="button">Ver más sentencias relevantes &raquo</a>
+							</div>
+
+    					</div>
+
+    					<div class="col-lg-12 col-sm-12">
+    						<h3 class="text-center pb-3">Derecho comparado</h3>
+
+							<?php $args = array(
+								'posts_per_page'   => 2,
+								'cat'         => '5',
+								'orderby'          => 'date',
+								'order'            => 'DESC',
+								'post_type'        => 'post',
+								'post_status'      => 'publish',
+							);
+							$posts_array = get_posts( $args ); 
+							foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
+								<div class="card my-1">
+									<div class="card-body">
+										<h5 class="card-title"><?php the_title();?></h5>
+							    		<p class="card-text text-justify"><?php echo get_the_excerpt()?></p>
+							    		<div class="text-right">
+											<a class="card-link" href="<?php the_permalink(); ?>">Leer más &raquo</a>
+										</div>
+									</div>
+								</div>			
+							<?php endforeach; 
+								wp_reset_postdata();
+							?>
+							<div class="text-center">
+								<a class="btn btn-primary text- my-3" href="<?php echo get_category_link(5);?>" role="button">Ver más sentencias relevantes &raquo</a>
+							</div>
+
+    					</div>
+    				</div>				
     		</div>
 
     		<div class="col-lg-4 col-sm-12">
-    			<h3 class="text-center">Artículos de opinión</h3>
-    				<?php $args = array(
-						'posts_per_page'   => 2,
-						'cat'         => '8',
-						'orderby'          => 'date',
-						'order'            => 'DESC',
-						'post_type'        => 'post',
-						'post_status'      => 'publish',
-					);
-					$posts_array = get_posts( $args ); 
-					foreach ( $posts_array as $post ) : setup_postdata( $post ); 
+	    			<div class="row">
+	    				<div class="col-lg-12 col-sm-12">
+			    			<h3 class="text-center pb-3">Artículos de opinión</h3>
+			    				<?php $args = array(
+									'posts_per_page'   => 2,
+									'cat'         => '8',
+									'orderby'          => 'date',
+									'order'            => 'DESC',
+									'post_type'        => 'post',
+									'post_status'      => 'publish',
+								);
+								$posts_array = get_posts( $args ); 
+								foreach ( $posts_array as $post ) : setup_postdata( $post ); 
+									//Pregunta si hay imagen miniatura para ver si colocarla o no
+									if (has_post_thumbnail($post->ID)) {
+										$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+									}				 
+								?>
+								<div class="card my-1">
+									<?php
+										//Pregunta si hay imagen miniatura para ver si colocarla o no
+										//Se recomiendan imagenes con 960x720
+										if (has_post_thumbnail($post->ID)) {
+										?>
+											<img class="card-img-top" src="<?php echo $image[0]?>" alt="Card image cap">
+										<?php
+											}
+										?>
+									<div class="card-body">
+										<h5 class="card-title"><?php the_title();?></h5>
+										<p class="card-text text-justify"><?php echo get_the_excerpt()?></p>
+										<div class="text-right">
+											<a class="card-link" href="<?php the_permalink(); ?>">Leer más &raquo</a>
+										</div>
+									    <p class="card-text"><small class="text-muted"><?php the_time('N - j - Y')?></small></p>
+									</div>
+								</div>		
+								<?php endforeach; 
+									wp_reset_postdata();
+								?>
+							
+						</div>
 
-						//Pregunta si hay imagen miniatura para ver si colocarla o no
-						if (has_post_thumbnail($post->ID)) {
-							$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-						}
-						 
-					?>
-						<div class="card my-1">
-							<?php
-
-								//Pregunta si hay imagen miniatura para ver si colocarla o no
-								//Se recomiendan imagenes con 960x720
-								if (has_post_thumbnail($post->ID)) {
-							?>
-								<img class="card-img-top" src="<?php echo $image[0]?>" alt="Card image cap">
-							<?php
-								}
-
-							?>
-						  
-						  <div class="card-body">
-						    <h5 class="card-title"><?php the_title();?></h5>
-						    <p class="card-text text-justify"><?php echo get_the_excerpt()?></p>
-						    <div class="text-right">
-								<a class="card-link" href="<?php the_permalink(); ?>">Leer más &raquo</a>
+						<div class="col-lg-12 col-sm-12 my-3">
+			    			<h3 class="text-center pb-3">Proyectos</h3>
+			    			<p class="text-justify">¿Deseas una interacción con un abogado referente a proyectos y emprendimientos?</p>
+							<div class="text-center">
+								<a class="btn btn-primary text-center" href="<?php echo site_url('proyectos')?>" role="button">Click aquí</a>
 							</div>
-						    <p class="card-text"><small class="text-muted"><?php the_time('N - j - Y')?></small></p>
-						  </div>
-						</div>		
-					<?php endforeach; 
-						wp_reset_postdata();
-					?>
-    		</div>
+						</div>
+
+						<div class="col-lg-12 col-sm-12 my-3">
+			    			<h3 class="text-center pb-3">Consultas</h3>
+			    			<p class="text-justify">¿Deseas una interacción con un abogado referente a proyectos y emprendimientos?</p>
+							<div class="text-center">
+								<a class="btn btn-primary text-center" href="<?php echo site_url('consultas')?>" role="button">Click aquí</a>
+							</div>
+						</div>
+					</div>
+    			
+			</div>
 		</div>
 	</div>
+	
 </section>
 
 
