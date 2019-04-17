@@ -1,10 +1,18 @@
 <?php wp_footer()?>
-<footer>
-	<nav class="navbar navbar-dark bg-primary text-center">
-  <div class="container text-center">
-    <p class="text-muted credit" style="color:#fff">xyz</p>
+<footer class="bg-primary ">
+	
+  <div class="container ">
+    <div class="row">
+      <div class="col-12 text-center">
+        <p class="my-3 credit" style="color:#fff">
+          Varguilla y Asociados© 2019
+        </p>
+      </div>
+      
+    </div>
+    
   </div>  		
-	</nav>
+	
 </footer>
 </body>
 </html>

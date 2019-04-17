@@ -222,14 +222,14 @@
 	<div class="container">
 		<div class="row">
 			
-			<div class="col-lg-6 col-sm-12 imagen-fondo align-self-center" style="background:transparent url(<?php echo get_theme_file_uri('images/buzon.jpeg')?>) no-repeat center center /cover" >
+			<div class="col-lg-6 col-sm-12 imagen-fondo" style="background:transparent url(<?php echo get_theme_file_uri('images/buzon.jpeg')?>) no-repeat center  /cover" >
 
 
-      				<a class="btn btn-primary" href="<?php echo site_url('contacto')?>" role="button">Contacto</a>
+      				<a class="btn btn-primary align-middle" href="<?php echo site_url('contacto')?>" role="button">Contacto</a>
 
     		</div>
 
-			<div class="col-lg-6 col-sm-12 imagen-fondo" style="background:transparent url(<?php echo get_theme_file_uri('images/fondo-mac.jpg')?>) no-repeat center center /cover" >
+			<div class="col-lg-6 col-sm-12 imagen-fondo" style="background:transparent url(<?php echo get_theme_file_uri('images/fondo-mac.jpg')?>) no-repeat center  /cover" >
 
 				<div class="col-lg-12 text-center imagen-fondo">
       				<a class="btn btn-primary" href="<?php echo site_url('contacto')?>" role="button">Regístrate</a>
@@ -265,17 +265,23 @@
     					<ul>
 					<?php $args = array(
 							'posts_per_page'   => 10,
-							'cat'         => '9',
+							'cat'         => '6',
 							'orderby'          => 'date',
 							'order'            => 'DESC',
 							'post_type'        => 'post',
 							'post_status'      => 'publish',
 						);
 						$posts_array = get_posts( $args ); 
-						foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
-							<li><a class="card-link" href="<?php the_permalink(); ?>"><?php the_title();?></a></li>
-						<?php endforeach; 
-						wp_reset_postdata();
+						if(!empty($posts_array)){
+							foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
+								<li><a class="card-link" href="<?php the_permalink(); ?>"><?php the_title();?></a></li>
+							<?php endforeach; 
+							wp_reset_postdata();
+						}else{
+						?>
+								<p>No se han agregado novedades legales</p>
+						<?php							
+						}
 					?>
 						</ul>   		
     				</div>
@@ -339,30 +345,37 @@
 
 							<?php $args = array(
 								'posts_per_page'   => 2,
-								'cat'         => '2',
+								'cat'         => '5',
 								'orderby'          => 'date',
 								'order'            => 'DESC',
 								'post_type'        => 'post',
 								'post_status'      => 'publish',
 							);
-							$posts_array = get_posts( $args ); 
-							foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
-								<div class="card my-1">
-									<div class="card-body">
-										<h5 class="card-title"><?php the_title();?></h5>
-							    		<p class="card-text text-justify"><?php echo get_the_excerpt()?></p>
-							    		<div class="text-right">
-											<a class="card-link" href="<?php the_permalink(); ?>">Leer más &raquo</a>
+							$posts_array = get_posts( $args );
+								if(!empty($posts_array)){ 
+								foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
+									<div class="card my-1">
+										<div class="card-body">
+											<h5 class="card-title"><?php the_title();?></h5>
+												<p class="card-text text-justify"><?php echo get_the_excerpt()?></p>
+												<div class="text-right">
+												<a class="card-link" href="<?php the_permalink(); ?>">Leer más &raquo</a>
+											</div>
 										</div>
-									</div>
-								</div>			
-							<?php endforeach; 
-								wp_reset_postdata();
-							?>
-							<div class="text-center">
-								<a class="btn btn-primary text- my-3" href="<?php echo get_category_link(2);?>" role="button">Ver más artículos laborales &raquo</a>
-							</div>
-
+									</div>			
+								<?php endforeach; 
+									wp_reset_postdata();
+								?>
+								<div class="text-center">
+									<a class="btn btn-primary text- my-3" href="<?php echo get_category_link(2);?>" role="button">Ver más artículos laborales &raquo</a>
+								</div>
+								<?php
+							}else{
+								?>
+									<p class="text-center">No se han agregado articulos</p>
+								<?php
+								}
+								?>
     					</div>
 
     					<div class="col-lg-12 col-sm-12">
@@ -370,30 +383,38 @@
 
 							<?php $args = array(
 								'posts_per_page'   => 2,
-								'cat'         => '5',
+								'cat'         => '4',
 								'orderby'          => 'date',
 								'order'            => 'DESC',
 								'post_type'        => 'post',
 								'post_status'      => 'publish',
 							);
 							$posts_array = get_posts( $args ); 
-							foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
-								<div class="card my-1">
-									<div class="card-body">
-										<h5 class="card-title"><?php the_title();?></h5>
-							    		<p class="card-text text-justify"><?php echo get_the_excerpt()?></p>
-							    		<div class="text-right">
-											<a class="card-link" href="<?php the_permalink(); ?>">Leer más &raquo</a>
+							if(!empty($posts_array)){
+								foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
+									<div class="card my-1">
+										<div class="card-body">
+											<h5 class="card-title"><?php the_title();?></h5>
+												<p class="card-text text-justify"><?php echo get_the_excerpt()?></p>
+												<div class="text-right">
+												<a class="card-link" href="<?php the_permalink(); ?>">Leer más &raquo</a>
+											</div>
 										</div>
-									</div>
-								</div>			
-							<?php endforeach; 
-								wp_reset_postdata();
-							?>
-							<div class="text-center">
-								<a class="btn btn-primary text- my-3" href="<?php echo get_category_link(5);?>" role="button">Ver más sentencias relevantes &raquo</a>
-							</div>
-
+									</div>			
+								<?php endforeach; 
+									wp_reset_postdata();
+								?>
+								<div class="text-center">
+									<a class="btn btn-primary text- my-3" href="<?php echo get_category_link(5);?>" role="button">Ver más sentencias relevantes &raquo</a>
+								</div>
+								
+								<?php
+							}else{
+								?>
+									<p class="text-center">No se han agregado articulos</p>
+								<?php
+							}
+								?>
     					</div>
 
     					<div class="col-lg-12 col-sm-12">
@@ -401,13 +422,14 @@
 
 							<?php $args = array(
 								'posts_per_page'   => 2,
-								'cat'         => '5',
+								'cat'         => '3',
 								'orderby'          => 'date',
 								'order'            => 'DESC',
 								'post_type'        => 'post',
 								'post_status'      => 'publish',
 							);
 							$posts_array = get_posts( $args ); 
+							if(!empty($posts_array)){
 							foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
 								<div class="card my-1">
 									<div class="card-body">
@@ -424,7 +446,13 @@
 							<div class="text-center">
 								<a class="btn btn-primary text- my-3" href="<?php echo get_category_link(5);?>" role="button">Ver más sentencias relevantes &raquo</a>
 							</div>
-
+							<?php
+							}else{
+							?>
+								<p class="text-center">No se han agregado articulos</p>
+							<?php
+							}
+							?>
     					</div>
     				</div>				
     		</div>
@@ -435,13 +463,14 @@
 			    			<h3 class="text-center pb-3">Artículos de opinión</h3>
 			    				<?php $args = array(
 									'posts_per_page'   => 2,
-									'cat'         => '8',
+									'cat'         => '2',
 									'orderby'          => 'date',
 									'order'            => 'DESC',
 									'post_type'        => 'post',
 									'post_status'      => 'publish',
 								);
 								$posts_array = get_posts( $args ); 
+								if(!empty($posts_array)){
 								foreach ( $posts_array as $post ) : setup_postdata( $post ); 
 									//Pregunta si hay imagen miniatura para ver si colocarla o no
 									if (has_post_thumbnail($post->ID)) {
@@ -469,8 +498,13 @@
 								</div>		
 								<?php endforeach; 
 									wp_reset_postdata();
+								
+								}else{
 								?>
-							
+									<p class="text-center">No se han agregado articulos</p>
+								<?php
+								}
+								?>
 						</div>
 
 						<div class="col-lg-12 col-sm-12 my-3">
