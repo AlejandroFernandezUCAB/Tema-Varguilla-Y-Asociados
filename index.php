@@ -1,4 +1,4 @@
-<?php 
+<?php
 	get_header();
 	$inicio = 'index.php/';
 ?>
@@ -102,7 +102,7 @@
 				  </div>
 				</div>
 			</div>
-			
+
 			<div class="col-lg-4 col-sm-12">
 				<h3 class="text-center">Valores</h3>
 				<div class="text-center">
@@ -213,7 +213,7 @@
 				    </div>
 				  </div>
 				</div>
-			</div>		
+			</div>
 		</div>
 	</div>
 </section>
@@ -221,22 +221,16 @@
 <section class="py-3">
 	<div class="container">
 		<div class="row">
-			
-			<div class="col-lg-6 col-sm-12 imagen-fondo" style="background:transparent url(<?php echo get_theme_file_uri('images/buzon.jpeg')?>) no-repeat center  /cover" >
-
-
-      				<a class="btn btn-primary align-middle" href="<?php echo site_url('contacto')?>" role="button">Contacto</a>
-
-    		</div>
-
-			<div class="col-lg-6 col-sm-12 imagen-fondo" style="background:transparent url(<?php echo get_theme_file_uri('images/fondo-mac.jpg')?>) no-repeat center  /cover" >
-
-				<div class="col-lg-12 text-center imagen-fondo">
-      				<a class="btn btn-primary" href="<?php echo site_url('contacto')?>" role="button">Regístrate</a>
-    			</div>
-
-    		</div>
-
+			<div class="jumbotron col-lg-6" style="background:transparent url(<?php echo get_theme_file_uri('images/buzon.jpeg')?>) no-repeat center  /cover; border-radius: 0">
+				<div class="text-center">
+					<a class="btn btn-primary btn-lg" href="<?php echo site_url('contacto')?>" role="button">Contacto</a>
+				</div>
+			</div>
+			<div class="jumbotron col-lg-6" style="background:transparent url(<?php echo get_theme_file_uri('images/fondo-mac.jpg')?>) no-repeat center  /cover;border-radius: 0">
+				<div class="text-center">
+					<a class="btn btn-primary btn-lg" href="<?php echo site_url('contacto')?>" role="button">Regístrate</a>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
@@ -258,32 +252,34 @@
 							<li>Auditoria Laboral</li>
 							<li>Auditoría General</li>
 						</ul>
+						<hr>
 					</div>
 
 					<div class="col-lg-12 col-sm-12 my-3">
     					<h3 class="text-center pb-3">Novedades legales</h3>
     					<ul>
-					<?php $args = array(
-							'posts_per_page'   => 10,
-							'cat'         => '6',
-							'orderby'          => 'date',
-							'order'            => 'DESC',
-							'post_type'        => 'post',
-							'post_status'      => 'publish',
-						);
-						$posts_array = get_posts( $args ); 
-						if(!empty($posts_array)){
-							foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
-								<li><a class="card-link" href="<?php the_permalink(); ?>"><?php the_title();?></a></li>
-							<?php endforeach; 
-							wp_reset_postdata();
-						}else{
-						?>
-								<p>No se han agregado novedades legales</p>
-						<?php							
-						}
-					?>
-						</ul>   		
+								<?php $args = array(
+										'posts_per_page'   => 10,
+										'cat'         => '6',
+										'orderby'          => 'date',
+										'order'            => 'DESC',
+										'post_type'        => 'post',
+										'post_status'      => 'publish',
+									);
+									$posts_array = get_posts( $args );
+									if(!empty($posts_array)){
+										foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
+											<li><a class="card-link" href="<?php the_permalink(); ?>"><?php the_title();?></a></li>
+										<?php endforeach;
+										wp_reset_postdata();
+									}else{
+									?>
+											<p>No se han agregado novedades legales</p>
+									<?php
+									}
+								?>
+							</ul>
+							<hr>
     				</div>
 
     				<div class="col-lg-12 col-sm-12 my-3">
@@ -352,7 +348,7 @@
 								'post_status'      => 'publish',
 							);
 							$posts_array = get_posts( $args );
-								if(!empty($posts_array)){ 
+								if(!empty($posts_array)){
 								foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
 									<div class="card my-1">
 										<div class="card-body">
@@ -362,8 +358,8 @@
 												<a class="card-link" href="<?php the_permalink(); ?>">Leer más &raquo</a>
 											</div>
 										</div>
-									</div>			
-								<?php endforeach; 
+									</div>
+								<?php endforeach;
 									wp_reset_postdata();
 								?>
 								<div class="text-center">
@@ -376,6 +372,7 @@
 								<?php
 								}
 								?>
+								<hr>
     					</div>
 
     					<div class="col-lg-12 col-sm-12">
@@ -389,7 +386,7 @@
 								'post_type'        => 'post',
 								'post_status'      => 'publish',
 							);
-							$posts_array = get_posts( $args ); 
+							$posts_array = get_posts( $args );
 							if(!empty($posts_array)){
 								foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
 									<div class="card my-1">
@@ -400,14 +397,14 @@
 												<a class="card-link" href="<?php the_permalink(); ?>">Leer más &raquo</a>
 											</div>
 										</div>
-									</div>			
-								<?php endforeach; 
+									</div>
+								<?php endforeach;
 									wp_reset_postdata();
 								?>
 								<div class="text-center">
 									<a class="btn btn-primary text- my-3" href="<?php echo get_category_link(5);?>" role="button">Ver más sentencias relevantes &raquo</a>
 								</div>
-								
+
 								<?php
 							}else{
 								?>
@@ -415,6 +412,7 @@
 								<?php
 							}
 								?>
+								<hr>
     					</div>
 
     					<div class="col-lg-12 col-sm-12">
@@ -428,7 +426,7 @@
 								'post_type'        => 'post',
 								'post_status'      => 'publish',
 							);
-							$posts_array = get_posts( $args ); 
+							$posts_array = get_posts( $args );
 							if(!empty($posts_array)){
 							foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
 								<div class="card my-1">
@@ -439,8 +437,8 @@
 											<a class="card-link" href="<?php the_permalink(); ?>">Leer más &raquo</a>
 										</div>
 									</div>
-								</div>			
-							<?php endforeach; 
+								</div>
+							<?php endforeach;
 								wp_reset_postdata();
 							?>
 							<div class="text-center">
@@ -454,7 +452,8 @@
 							}
 							?>
     					</div>
-    				</div>				
+							<hr>
+    				</div>
     		</div>
 
     		<div class="col-lg-4 col-sm-12">
@@ -469,13 +468,13 @@
 									'post_type'        => 'post',
 									'post_status'      => 'publish',
 								);
-								$posts_array = get_posts( $args ); 
+								$posts_array = get_posts( $args );
 								if(!empty($posts_array)){
-								foreach ( $posts_array as $post ) : setup_postdata( $post ); 
+								foreach ( $posts_array as $post ) : setup_postdata( $post );
 									//Pregunta si hay imagen miniatura para ver si colocarla o no
 									if (has_post_thumbnail($post->ID)) {
 										$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-									}				 
+									}
 								?>
 								<div class="card my-1">
 									<?php
@@ -495,16 +494,17 @@
 										</div>
 									    <p class="card-text"><small class="text-muted"><?php the_time('N - j - Y')?></small></p>
 									</div>
-								</div>		
-								<?php endforeach; 
+								</div>
+								<?php endforeach;
 									wp_reset_postdata();
-								
+
 								}else{
 								?>
 									<p class="text-center">No se han agregado articulos</p>
 								<?php
 								}
 								?>
+								<hr>
 						</div>
 
 						<div class="col-lg-12 col-sm-12 my-3">
@@ -513,6 +513,7 @@
 							<div class="text-center">
 								<a class="btn btn-primary text-center" href="<?php echo site_url('proyectos')?>" role="button">Click aquí</a>
 							</div>
+							<hr>
 						</div>
 
 						<div class="col-lg-12 col-sm-12 my-3">
@@ -521,13 +522,14 @@
 							<div class="text-center">
 								<a class="btn btn-primary text-center" href="<?php echo site_url('consultas')?>" role="button">Click aquí</a>
 							</div>
+							<hr>
 						</div>
 					</div>
-    			
+
 			</div>
 		</div>
 	</div>
-	
+
 </section>
 
 
