@@ -56,103 +56,63 @@
 					<a class="btn btn-primary text-center" href="<?php echo site_url('quienes-somos')?>" role="button">Leer más &raquo</a>
 				</div>
 
-				<div class="accordion pt-3" id="accordionExample">
-				  <div class="card">
-				    <div class="card-header" id="headingOne">
-				      <h2 class="mb-0">
-				        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-				          Miembros
-				        </button>
-				      </h2>
-				    </div>
-
-				    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-				      <div class="card-body">
-				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-				      </div>
-				    </div>
-				  </div>
-				  <div class="card">
-				    <div class="card-header" id="headingTwo">
-				      <h2 class="mb-0">
-				        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-				          Misión
-				        </button>
-				      </h2>
-				    </div>
-				    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-				      <div class="card-body">
-				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-				      </div>
-				    </div>
-				  </div>
-				  <div class="card">
-				    <div class="card-header" id="headingThree">
-				      <h2 class="mb-0">
-				        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-				          Visión
-				        </button>
-				      </h2>
-				    </div>
-				    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-				      <div class="card-body">
-				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-				      </div>
-				    </div>
-				  </div>
-				</div>
+				
 			</div>
 
 			<div class="col-lg-4 col-sm-12">
-				<h3 class="text-center">Valores</h3>
-				<div class="text-center">
-					<p class="text-justify">
-						Es una alianza creada para impulsar y afianzar la conexión con los clientes, porque consideramos que toda relación cliente-abogado es personal y de confianza, surgidas de la experiencia personal o recomendaciones, acorde a la eficiencia y eficacia en los servicios jurídicos prestados. Así se pensó en crear un espacio físico y web que permita mantener, proyectar, crear y mejora estas relaciones, mediante una comunicación permanente como fuente principal para el conocimiento de las necesidades del cliente.
-					</p>
-					<a class="btn btn-primary text-center" href="<?php echo site_url('quienes-somos')?>" role="button">Leer más &raquo</a>
-				</div>
-
+				<h3 class="text-center">Nuestra organización</h3>
 				<div class="accordion pt-3" id="accordionExample">
 				  <div class="card">
 				    <div class="card-header" id="headingOne">
 				      <h2 class="mb-0">
-				        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-				          Miembros
+				        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#misionOne" aria-expanded="true" aria-controls="mision1">
+				          Misión
 				        </button>
 				      </h2>
 				    </div>
 
-				    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+				    <div id="misionOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
 				      <div class="card-body">
-				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				        Mi misión es orientar jurídicamente a las sociedades mercantiles y civiles en el desarrollo de sus actividades, con el fin de crearles estructuras afianzadas en la normativa vigente que permitan el crecimiento productivo y permanente de la organización. 
 				      </div>
 				    </div>
 				  </div>
 				  <div class="card">
 				    <div class="card-header" id="headingTwo">
 				      <h2 class="mb-0">
-				        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-				          Misión
+				        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#visionTwo" aria-expanded="false" aria-controls="visionTwo">
+				          Visión
 				        </button>
 				      </h2>
 				    </div>
-				    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				    <div id="visionTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
 				      <div class="card-body">
-				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				        Ser la abogada de consulta por excelencia por mis sólidos y actualizados conocimientos jurídicos y por establecer relaciones empáticas con los clientes.
 				      </div>
 				    </div>
 				  </div>
 				  <div class="card">
 				    <div class="card-header" id="headingThree">
 				      <h2 class="mb-0">
-				        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-				          Visión
+				        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#valoresThree" aria-expanded="false" aria-controls="valoresThree">
+				          Valores
 				        </button>
 				      </h2>
 				    </div>
-				    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-				      <div class="card-body">
-				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				    <div id="valoresThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+				      <div class="card-body text-center">
+				        <ul class="text-justify">
+									<li>Empatía</li>
+									<li>Honestidad</li>
+									<li>Respeto</li>
+									<li>Responsabilidad</li>
+									<li>Confianza</li>
+									<li>Entusiasmo</li>
+									<li>Eficiencia y Eficacia</li>
+									<li>Flexibilidad</li>
+								</ul>
+								
+								<a class="btn btn-primary text-center" href="<?php echo site_url('valores')?>" role="button">Leer más &raquo</a>
 				      </div>
 				    </div>
 				  </div>
@@ -166,52 +126,6 @@
 						Es una alianza creada para impulsar y afianzar la conexión con los clientes, porque consideramos que toda relación cliente-abogado es personal y de confianza, surgidas de la experiencia personal o recomendaciones, acorde a la eficiencia y eficacia en los servicios jurídicos prestados. Así se pensó en crear un espacio físico y web que permita mantener, proyectar, crear y mejora estas relaciones, mediante una comunicación permanente como fuente principal para el conocimiento de las necesidades del cliente.
 					</p>
 					<a class="btn btn-primary text-center" href="<?php echo site_url('quienes-somos')?>" role="button">Leer más &raquo</a>
-				</div>
-
-				<div class="accordion pt-3" id="accordionExample">
-				  <div class="card">
-				    <div class="card-header" id="headingOne">
-				      <h2 class="mb-0">
-				        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-				          Miembros
-				        </button>
-				      </h2>
-				    </div>
-
-				    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-				      <div class="card-body">
-				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-				      </div>
-				    </div>
-				  </div>
-				  <div class="card">
-				    <div class="card-header" id="headingTwo">
-				      <h2 class="mb-0">
-				        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-				          Misión
-				        </button>
-				      </h2>
-				    </div>
-				    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-				      <div class="card-body">
-				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-				      </div>
-				    </div>
-				  </div>
-				  <div class="card">
-				    <div class="card-header" id="headingThree">
-				      <h2 class="mb-0">
-				        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-				          Visión
-				        </button>
-				      </h2>
-				    </div>
-				    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-				      <div class="card-body">
-				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-				      </div>
-				    </div>
-				  </div>
 				</div>
 			</div>
 		</div>
